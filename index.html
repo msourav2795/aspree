@@ -1,0 +1,340 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/basscss-responsive-margin@1.1.0/css/responsive-margin.css" rel="stylesheet">
+	<script src="https://use.fontawesome.com/0433f9339b.js"></script>
+	<style>		   
+		.flex {
+			width: 1330px;
+			height: 950px;
+			border: 1px solid #555;
+		}
+
+		#side{
+			width: 90px;
+		}
+		#main{
+			width:1240px;
+		}
+		.white_text{
+			color:white;
+		}
+		.bg_white{
+			background-color:white;
+		}
+		td,table {		
+			border-collapse: collapse;
+		}
+		.calendar  td{
+			border-bottom: 1px solid #F1F1F1;
+			text-align:center;
+			width:83px;
+			padding:16px 0px;
+		}
+		.low{
+			border:none;
+			
+		}
+		.h_calendar td{
+			text-align:center;
+			width:83px;
+			padding:7px 0px;
+
+		}
+		.fad{
+			color:#d6d6c2;
+		}
+		ul li {
+  
+			list-style:none; 
+		}
+
+		ul li:nth-child(1):before {
+			color:#11e7f2;
+			content:"\2022";
+			padding-right:.25em;
+			font-size:1.3em;
+		}
+		ul li:nth-child(2):before {
+			color:#e311f2;
+			content:"\2022";
+			padding-right:.25em;
+			font-size:1.3em;
+		}		
+
+		ul li:nth-child(3):before {
+			color:#117af2;
+			content:"\2022";
+			padding-right:.25em;
+			font-size:1.3em;
+		}		
+
+		ul li:nth-child(4):before {
+			color:#f29111;
+			content:"\2022";
+			padding-right:.25em;
+			font-size:1.3em;
+		}		
+		
+
+	</style>
+</head>
+<body  style="font-family:roboto">
+    <div class="flex" style="background-color:#F1F1F1;border-color:#F1F1F1">
+		<div id="side" class="clearfix border" style="background-color:#1e1e15">
+		
+			
+			<div style="height:40px;width:40px;border-radius:50%;border:2px solid black;background-image:url('m.jpg')" class="mx-auto mt2 mb3"></div>
+			<div class="my-auto center pt4" style="height:700px;">
+			<div style="text-align:center;color:#6e7377" class="py2 pt4"> <i class="fa fa-envelope-o px3 pb1" aria-hidden="true"  style="color:#6e7377;font-size:1.5em"></i><br>Mail</div>
+			<div style="text-align:center;color:#6e7377" class="py2"> <i class="fa fa-calendar px3 pb1" aria-hidden="true" style="color:#6e7377;font-size:1.5em"></i><br>Calendar</div>
+			<div style="text-align:center;color:#6e7377" class="py2"> <i class="fa fa-user px3 pb1" aria-hidden="true" style="color:#6e7377;font-size:1.5em"></i><br>Contacts</div>
+			<div style="text-align:center;color:#6e7377" class="py2"> <i class="fa fa-clock-o px3 pb1" aria-hidden="true" style="color:#6e7377;font-size:1.5em"></i><br>Tasks</div>
+			<div style="text-align:center;color:#6e7377" class="py2"> <i class="fa fa-file-o px3 pb1" aria-hidden="true" style="color:#6e7377;font-size:1.5em"></i><br>Notes</div>
+			<div style="text-align:center;color:#6e7377" class="py2"> <i class="fa fa-th-large px3 pb1" aria-hidden="true" style="color:#6e7377;font-size:1.5em"></i><br>Others</div>
+			
+			</div>
+			
+		
+		</div>
+		<div id="main">
+			<div style="width:1240px;height:60px"  class="clearfix  bg_white">
+				
+				<div class="clearfix  ">
+					<div class="left p2 mr1 "><i class="fa fa-bell-o" aria-hidden="true" style="font-size:1.1em;color:#A1AEB3"><sup style="border:1px solid black;border-radius:50%;padding:0px 3px;border-color:#A1AEB3">9</sup></i></div>
+					<div class="right p2 ml1 ">
+						<i class="fa fa-cog px3" aria-hidden="true" style="font-size:1.1em;color:#A1AEB3"></i>
+						<i class="fa fa-sign-out" aria-hidden="true" style="font-size:1.1em;color:#A1AEB3"></i>
+					</div>
+					<div class="center  pb3" style="color:#d6d6c2;font-size:1.8em;line-height:0.01em">
+						<p class="underline bold" ><b style="color:black;">Aspree</b></p>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div style="width:1240px;height:165px;background-image:url('tower.jpg')"  class="clearfix border">
+				<i class="fa fa-map-marker p2" aria-hidden="true" style="color:white;font-size:1.3em">&nbsp;Paris, France</i>
+				<div style="height:165px;width:150px;background:rgba(140, 26, 255, 0.85)" class="mr0 right">
+					<div style="text-align:center;color:white" class="mt4"><i class="fa fa-cloud-download " aria-hidden="true" style="color:white;font-size:2em"></i><br>5:43PM</div>
+				</div>
+				
+				<div style="height:165px;width:150px;background:rgba(230, 0, 0, 0.85)" class="mr0 right">
+					<div style="text-align:center;color:white" class="mt4"><i class="fa fa-cloud-upload " aria-hidden="true" style="color:white;font-size:2em"></i><br>5:43PM</div>
+				</div>
+			
+			
+			
+			
+			
+			</div>
+			
+			
+			
+			<div style="width:380px;height:460px;border-color:#F1F1F1"  class="clearfix border m2 left bg_white">
+				<!--<div class="h2 pt2 pb2 center " style="color:#ff3300;">Mail</div>-->
+			<div class="clearfix mb2 ">
+  
+  <div class="right  m1" style="height:30px;width:30px;background-color:#ff3300;padding:2px"><i class="fa fa-pencil p1" aria-hidden="true" style="font-size:1.1em;color:white"></i></div>
+  <div class="overflow-hidden center">
+    <p class="h2  " style="color:#ff3300;line-height:0.01em">Mail</p>
+  </div>
+</div>
+				
+				<div class="p2 border-bottom" style="border-color:#F1F1F1">
+					<div class="fa fa-heart left pt1 pr1" aria-hidden="true" style="font-size:0.8em;color:red"></div>
+					<div style="height:30px;width:30px;background-image:url('m1.jpg');border-radius:15%" class="left mr2"></div>
+					<div class="right " style="color:#c2c2a3">4:16pm</div>
+					<div class=" " style="color:#c2c2a3">Tim & Jonathan(2)<br><b style="color:black">An incredible designer.</b></div><p class="pl2">Hi Jeremy, meet my friend Tim. He sure is sleeping right now but we can discuss about..</p>
+				</div>
+			
+				<div class="p2 border-bottom" style="border-color:#F1F1F1">
+					<div class="fa fa-heart left pt1 pr1" aria-hidden="true" style="font-size:0.8em;color:red"></div>
+					<div style="height:30px;width:30px;background-image:url('m2.jpg');border-radius:15%" class="left mr2"></div>
+					<div class="right " style="color:#c2c2a3">2:25pm</div>
+					<div class=" " style="color:#c2c2a3">Tim & Jonathan(2)<br><b style="color:black">An incredible designer.</b></div>
+					
+					<p class="pl2">Hi Jeremy, meet my friend Tim. He sure is sleeping right now but we can discuss about..</p>
+				</div>
+			
+				<div class="p2  ">
+					<div class="fa fa-heart left pt1 pr1" aria-hidden="true" style="font-size:0.8em;color:red"></div>
+					<div style="height:30px;width:30px;background-image:url('m3.jpg');border-radius:15%" class="left mr2"></div>
+					<div class="right " style="color:#c2c2a3">11:18pm</div>
+					<div class=" " style="color:#c2c2a3">Haraldur Thorleifsson<br><b style="color:black">Trip to the moon.</b></div>
+					
+					<p class="pl2">Dude what are you doing this weekend? Do you want to go to the moon? Bring you calm with..</p>
+				</div>
+			
+			
+			</div>
+			
+			
+			
+			<div style="width:808px;height:420px;border-color:#F1F1F1"  class="clearfix border mt2 mb2 mr2 right bg_white">
+				<div style="width:808px;height:113px" class="px2">
+					
+					<div class="clearfix mb3 ">
+						<div class="left p2 mr1 "><i class="fa fa-caret-left" aria-hidden="true"></i>&nbsp;January 2014&nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></div>
+						<div class="right py2 pr3 ml1 "><i class="fa fa-plus-circle" aria-hidden="true " style="color: #e68a00;font-size:1.2em"></i></div>
+						<div class="overflow-hidden center">
+							<p class="h2 " style="color: #e68a00;line-height:0.01em">Calendar</p>
+						</div>
+					</div>
+
+					
+					<div class="right  pr2" style="color:#c2c2a3">
+						<table style="" class="h_calendar">
+
+						<tr>
+							<td class="low">Sun</td><td class="low">Mon</td><td class="low">Tue</td><td class="low">Wed</td><td class="low">Thu</td><td class="low">Fri</td><td class="low">Sat</td>
+						</tr>
+						</table>
+					
+					</div>
+				
+				</div>
+				
+				<div class=" left" style="">
+				<ul style="">
+					
+					<li class="pb1 " style="color:#c2c2a3"><b style="color:black">Dinner with her</b><br>&nbsp;&nbsp;&nbsp;Sat, 11Jan</li>
+					<li class=" py1" style="color:#c2c2a3"><b style="color:black">Meeting Tim</b><br>&nbsp;&nbsp;&nbsp;Sat, 11Jan</li>
+					<li class=" py1" style="color:#c2c2a3"><b style="color:black">Starting exercise</b><br>&nbsp;&nbsp;&nbsp;Sun, 19Jan</li>
+					<li class=" py1" style="color:#c2c2a3"><b style="color:black">Joining Conference</b><br>&nbsp;&nbsp;&nbsp;Thu, 30Jan</li>
+					
+				</ul>	
+					
+				</div>
+				
+				
+				
+			
+				<div style="width:581px;height:307px;border-color:#F1F1F1" class="border-left border-top right bottom mb0 ">
+				
+					<table style="width:100%" class="calendar">
+
+						<tr>
+							<td class="fad">29</td><td class="fad">30</td><td class="fad">31</td><td>1</td><td>2</td><td>3</td><td>4</td>
+						</tr>
+						<tr>
+							<td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+    
+						</tr>
+						<tr>
+							<td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+						</tr>
+						<tr>
+							<td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+						</tr>
+						<tr>
+							<td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class=" fad">1</td>
+						</tr>
+						
+						<tr >
+							<td class="low fad">2</td><td class="low fad">3</td><td class="low fad">4</td><td class="low fad">5</td><td class="low fad">6</td><td class="low fad">7</td><td class="low fad">8</td>
+						</tr>
+  
+					</table>
+				
+			
+				</div>
+			
+			
+			
+			</div>
+			
+			
+			
+			<div style="width:395px;height:250px;background-image:url('weather.jpg')"  class="clearfix  mx2 mb2 right" >
+				<div style="width:395px;height:250px;background:rgba(153, 221, 255, 0.85);">
+					<div style="color:white;opacity:1" class="px2 ">
+						
+						<!--<div class="center h2">Weather</div>-->
+						
+						
+						<div class="clearfix ">
+					<div class="right ml1 pt2"><i class="fa fa-plus-circle" aria-hidden="true" style="color:white;font-size:1.2em"></i></div>
+					<div class="left  mr1 pt2"><i class="fa fa-caret-left" aria-hidden="true" style="color:white;font-size:1.2em"></i>&nbsp;&nbsp;<i class="fa fa-caret-right" aria-hidden="true" style="color:white;font-size:1.2em"></i></div>
+					<div class="overflow-hidden center h2">
+						<p style="color:white;line-height:0.01px">Weather</p>
+					</div>
+				</div>
+						<div class="left">
+						<div class=" h2 pt2">Paris, France</div>
+						<div>Tuesday 7:00pm <br>Clear</div>
+						</div>
+						<div class="right">
+						<div class="pt3 px2"> <i class="fa fa-sun-o pb2" aria-hidden="true" style="font-size:1.8em">&nbsp;43&#176;</i><br>&nbsp;&nbsp;&nbsp;F&#176;&nbsp;&nbsp;|&nbsp;&nbsp;C&#176;</div>
+						</div>
+					</div>
+				</div>
+				
+			
+			</div>
+			
+			
+			
+			<div style="width:395px;height:250px ;border-color:#F1F1F1" class="clearfix border  mb2 right bg_white">
+				
+				
+				<div class="clearfix ">
+					<div class="right ml1 p2"><i class="fa fa-plus-circle" aria-hidden="true" style="color:#85B700;font-size:1.2em"></i></div>
+					<div class="left  mr1 p2"><i class="fa fa-search" aria-hidden="true" style="color:#c2c2a3;font-size:1.2em"></i></div>
+					<div class="overflow-hidden center h2">
+						<p style="color:#85B700;line-height:0.01px">Contacts</p>
+					</div>
+				</div>	
+					
+					
+					
+				<div class="p2 border-bottom" style="border-color:#F1F1F1">
+					
+					<div style="height:30px;width:30px;background-image:url('c1.jpg');border-radius:15%" class="left mr2"></div>
+					<div class=" " style="color:#c2c2a3"><b style="color:black">Cam Secore</b><br>camsecore@me.com</div>
+				</div>
+			
+				<div class="p2 border-bottom" style="border-color:#F1F1F1">
+					<div style="height:30px;width:30px;background-image:url('c2.jpg');border-radius:15%" class="left mr2"></div>
+					<div class=" " style="color:#c2c2a3"><b style="color:black">Justin Mezzell</b><br>justin@justinmezzell.com</div>
+				</div>
+			
+				<div class="p2  ">
+					<div style="height:30px;width:30px;background-image:url('c3.jpg');border-radius:15%" class="left mr2"></div>
+					<div class=" " style="color:#c2c2a3"><b style="color:black">Tim Boelaars</b><br>tim@timboelaars.com</div>
+				</div>
+			
+			</div>
+			
+			<div style="width:380px;height:210px;background-color:white;border-color:#F1F1F1"  class="clearfix border mx2 mb2 left">
+			
+				
+				<div class="clearfix ">
+					<div class="right ml1 p2"><i class="fa fa-plus-circle" aria-hidden="true" style="color:#cc33ff;font-size:1.2em"></i></div>
+					<div class="left  mr1 p2"><i class="fa fa-tag" aria-hidden="true" style="color:#c2c2a3;font-size:1.2em"></i></div>
+					<div class="overflow-hidden center h2">
+						<p style="color:#cc33ff;line-height:0.01px">Notes</p>
+					</div>
+				</div>	
+			
+				<div class="p2 border-bottom" style="border-color:#F1F1F1">Once upon a time I was a designer.<div class="border ml1 right px1 white_text" style="background-color:#49d0d0;border-color:#49d0d0">Stories</div></div>
+			
+				<div class="p2 border-bottom" style="border-color:#F1F1F1">Making a new illustration of bidiction.<div class="border ml1 right px1 white_text" style="background-color:#e6ac00;border-color:#e6ac00">Work</div></div>
+			
+				<div class="p2  ">Make pasta from Quassim's receipe.<div class="border ml1 right px1 white_text" style="background-color:#00bfff;border-color:#00bfff">Food</div></div>
+			</div>
+		
+		
+		
+		</div>
+  
+    </div>
+		
+	</body>
+</html>
